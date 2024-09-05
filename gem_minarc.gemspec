@@ -33,11 +33,13 @@ Gem::Specification.new do |s|
   ## --------------------------------------------
   ## Tailored installer to include Postgresql
   if ENV.include?("MINARC_TEST") == true then
-     s.files = s.files + Dir['code/arc/plugins/test/S2A_OPER_REP_OPDPC__SGS__21000101T000000_V21000101T000000_21000101T000001.EOF']
-     s.files = s.files + Dir['code/arc/plugins/test/S1A_TEST_MPL_ORBSCT_20140403T224609_99999999T999999_0006.EOF']
-     s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/manifest.safe']
-     s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/data/s1b-aux-cal.xml']
-     s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/support/*.xsd']
+      s.files = s.files + Dir['code/arc/plugins/test/example_1.m2ts']
+      s.files = s.files + Dir['code/arc/plugins/test/example_1.mp4']
+      s.files = s.files + Dir['code/arc/plugins/test/S2A_OPER_REP_OPDPC__SGS__21000101T000000_V21000101T000000_21000101T000001.EOF']
+      s.files = s.files + Dir['code/arc/plugins/test/S1A_TEST_MPL_ORBSCT_20140403T224609_99999999T999999_0006.EOF']
+      s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/manifest.safe']
+      s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/data/s1b-aux-cal.xml']
+      s.files = s.files + Dir['code/arc/plugins/test/S1B_AUX_CAL_V20190514T090000_G20210104T140612.SAFE/support/*.xsd']
   end
   ## --------------------------------------------
 
