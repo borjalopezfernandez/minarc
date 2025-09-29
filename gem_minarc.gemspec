@@ -85,6 +85,7 @@ Gem::Specification.new do |s|
   s.add_dependency('addressable', '~> 2.7')
   s.add_dependency('bcrypt', '~> 3.1')
   s.add_dependency('byebug', '~> 11.1')
+  s.add_dependency('concurrent-ruby', '1.3.4')
   s.add_dependency('dotenv', '~> 2.7')
   s.add_dependency('exiftool', ['>= 1.2.4', '< 1.2.5'])
   s.add_dependency('filesize', '~> 0.1')
@@ -105,7 +106,7 @@ Gem::Specification.new do |s|
   ##
   ## Tailored installer to include Postgresql
   if ENV.include?("MINARC_PG") == true then
-     s.add_dependency('pg', '~> 1.2.3')
+     s.add_dependency('pg', '~> 1.6')
   end
   ## --------------------------------------------
 
